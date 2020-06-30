@@ -6,7 +6,6 @@ type StubOptions = {
 
 type Stub<I, O> = [Operation<I, O>, (input: I) => O, StubOptions?];
 
-// this is more
 // maybe that helper is not needed with more accurate types
 const stub = <I, O>(
   operation: Operation<I, O>,
