@@ -1,0 +1,39 @@
+query findUser($userId: ID!) {
+  user(id: $userId) {
+    ...UserFields
+  }
+}
+
+fragment UserFields on User {
+  id
+  username
+  role
+}
+
+query getChat($chatId: ID!) {
+  chat(id: $chatId) {
+    messages {
+      id
+      content
+      user {
+        id
+      }
+    }
+  }
+}
+
+query myChats {
+  myChats {
+    id
+    messages {
+      id
+      content
+    }
+  }
+}
+
+mutation addMessage($message: String!, $chatId: ID!) {
+  postMessage(message: $message, chatId: $chatId) {
+    id
+  }
+}

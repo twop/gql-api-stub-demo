@@ -1,0 +1,26 @@
+{
+  "name": "gql-stub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-gql": "graphql-codegen --config codegen.yml"
+  },
+  "keywords": [],
+  "author": "Simon",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^15.2.0",
+    "graphql-tag": "^2.10.3",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.15.4",
+    "@graphql-codegen/typescript": "1.15.4",
+    "@graphql-codegen/typescript-named-operations-object": "",
+    "@graphql-codegen/typescript-operations": "1.15.4",
+    "@graphql-codegen/typescript-document-nodes": "1.15.4",
+    "@graphql-codegen/introspection": "1.15.4"
+  }
+}
